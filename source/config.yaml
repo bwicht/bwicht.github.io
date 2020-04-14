@@ -33,7 +33,54 @@ menu:
             url: 'https://themes.gohugo.io/hugo-book/'
             weight: 20
         -
+       baseURL: 'https://bwicht.github.io'
+title: MethQuant
+theme: hugo-book
+disablePathToLower: trues
+enableGitInfo: true
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    tableOfContents:
+        startLevel: 1
+languages:
+    en:
+        languageName: English
+        contentDir: content
+        weight: 1
+    ru:
+        languageName: Russian
+        contentDir: content.ru
+        weight: 2
+    cn:
+        languageName: Chinese
+        contentDir: content.cn
+        weight: 3
+menu:
+    after:
+        -
+            name: Github
+            url: 'https://github.com/alex-shpak/hugo-book'
+            weight: 10
+        -
+            name: 'Hugo Themes'
+            url: 'https://themes.gohugo.io/hugo-book/'
+            weight: 20
+        -
             name: contenu
+            url: 'https://bwicht.github.io/contenu/'
+            weight: 20
+params:
+    BookToC: true
+    BookSection: docs
+    BookRepo: 'https://github.com/alex-shpak/hugo-book'
+    BookEditPath: edit/master/exampleSite/content
+    BookDateFormat: 'January 2, 2006'
+    BookSearch: true
+    BookComments: true
+    BookPortableLinks: true
+    BookServiceWorker: true     name: contenu
             url: 'https://bwicht.github.io/contenu/'
             weight: 20
 params:
